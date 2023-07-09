@@ -7,24 +7,24 @@ document.getElementById("myButton").onclick = function(){
     // let statement = value of input.
     let statement = document.getElementById("myText").value;
     // terms and conditions.
-    if(statement == "سلام" || statement == "slam"){
+    if(statement == "سلام" || statement == "salam"){
         OUT.innerHTML =("ببخشید عربی بلد نیستم :)");
     }
-    else if (statement == "درود" || statement == "drood") {
+    else if (statement == "درود" || statement == "dorod") {
         OUT.innerHTML =("درود برتو در خدمتم");
     }
-    else if(statement == "چند سالته؟"){
+    else if(statement == "چند سالته؟" || statement == "how old are you?" || statement == "chand salete?"){
         OUT.innerHTML = "میخوای به چی برسی؟ (23 سالمه)"
     }
-    else if (statement == "اسمت چیه" || statement == "what is your name") {
+    else if (statement == "اسمت چیه" || statement == "what is your name?" || statement == "esmet chiye?") {
         OUT.innerHTML = "صابر"
     }
     else if(statement == "اسمت به چه معناست" || statement == "What does your name mean?"){
         OUT.innerHTML = " "
         OUT.innerHTML = "(saber به انگیلیسی به معنای شمشیر :)     " + "و به فارسی کسی که در خدا و برای خدا صبر کند و جزع و شکایت نکند."
     }
-    else if (statement == "تو کی هستی" || statement == "who are you"){
-        OUT.innerHTML ="من یک مدل رباتم که سازنده های من سعی کردن که منو شبی به ورزن اصلیم یعنی اقای صبر حیدری بسازن"
+    else if (statement == "تو کی هستی" || statement == "who are you?"){
+        OUT.innerHTML ="من یک مدل رباتم که سازنده های من سعی کردن که منو شبی به ورژن اصلیم یعنی اقای صابر حیدری بسازن"
     }
     else if (statement == null || statement == undefined || statement ==""){
         OUT.innerHTML =("لطفا یه چیزی وارد کنید");
@@ -38,10 +38,11 @@ document.getElementById("myButton").onclick = function(){
     else if (statement == "اسم کتابخونه ای که ساخیتی چیه" || statement == "What is the name of the library you built?"){
         OUT.innerHTML = "silver box"
     }
-    else if (statement == "اسم سازندگانت چیه" || statement == "What is the name of your creators"){
+    else if (statement == "اسم سازندگانت چیه" || statement == "What is the name of your creators?"){
         OUT.innerHTML = "mahsa - fatemeh - mohammad_rz1"
     }
     else{
         OUT.innerHTML = ("robot : " + "لطفا از عدد یا از چیز های ناشناخته استفاده نکنید اگه سوال درستی بود و جواب نداد به پشتیبانی زنگ بزنید (شماره پشتیبانی : 09381710527)");
     }
 }
+// Team: MohamadReza, Fatemeh, Mahsa. 
