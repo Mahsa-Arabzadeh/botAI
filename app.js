@@ -1,17 +1,22 @@
-const OUT = document.getElementById("output")
-
-document.getElementById("myButton").onclick = function(){
-    let statement = document.getElementById("myText").value;
-    if(statement == "سلام"){
-        OUT.innerHTML = "من زبونتو نمیفهمم :)"
-    }
-    else if(statement == "چندسالته؟"){
-        OUT.innerHTML = "3 سالمع"
-    }
-    else if(statement == "درود"){
-        OUT.innerHTML = "درود ای دوست :)"
-    }
-    else if(statement == "اسمت چیه"){
-        OUT.innerHTML = "saber به معنای شمشیر :)"
-    }
+function getResponse() {
+  // Vorodi 
+  let userInput = document.getElementById("userInput").value;
+  
+  // پاک کردن فیلد ورودی
+  document.getElementById("userInput").value = "";
+  
+  // پاسخ ربات بر اساس ورودی کاربر 
+  let botResponse;
+  if (userInput.toLowerCase().includes("hello") || userInput.toLowerCase().includes("hi")) {
+    botResponse = "Hello!";
+  } else if (userInput.toLowerCase().includes("how are you")) {
+    botResponse = "I'm good, thanks for asking!";
+  } else if (userInput.toLowerCase().includes("goodbye")) {
+    botResponse = "Goodbye! Have a nice day!";
+  } else {
+    botResponse = "I'm sorry, I can't understand your question.";
+  }
+  
+  // نمایش پاسخ ربات
+  document.getElementById("botResponse").innerHTML = botResponse;
 }
