@@ -1,0 +1,62 @@
+/* change background color and add some css */
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+    color: #fff;
+}
+/* some style to container */
+.container{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 0 10px #fff;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+/* select input */
+.container input[type = text]{
+    background-color: #808080;
+    outline: none;
+    border: none;
+    width: 270px;
+    height: 30px;
+    color: #fff;
+    font-size: 23px;
+    padding: 6px 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px gray;
+    margin-left: 25px;
+    direction: rtl;
+}
+/* select output p and add some style */
+.container>p{
+    background-color: #808080;
+    width: 490px;
+    height: 100px;
+    box-shadow: 0px 0px 8px gray;
+    border-radius: 5px;
+    padding: 10px;
+    direction: rtl;
+}
+/* select button */
+.container>button{
+    background: linear-gradient(rgb(0, 0, 0),rgb(132, 132, 132));
+    width: 120px;
+    height: 40px;
+    margin-left: 35px;
+    border-radius: 0px 20px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+/* hover button */
+.container>button:hover{
+    box-shadow: 0 0 5px white;
+}
