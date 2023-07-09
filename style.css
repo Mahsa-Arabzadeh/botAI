@@ -34,7 +34,6 @@ body{
     border-radius: 5px;
     box-shadow: 0px 0px 8px gray;
     margin-left: 25px;
-    direction: rtl;
 }
 /* select output p and add some style */
 .container>p{
@@ -44,7 +43,6 @@ body{
     box-shadow: 0px 0px 8px gray;
     border-radius: 5px;
     padding: 10px;
-    direction: rtl;
 }
 /* select button */
 .container>button{
