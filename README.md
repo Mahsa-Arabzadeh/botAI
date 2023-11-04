@@ -1,4 +1,4 @@
-# saber-bot
+# botAI
 link: 
 https://mahsa-arabzadeh.github.io/saber-bot/
 
